@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation - Method 2</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Form Validation - Method 2</h1>
+
+        <form id="form2" action="#" onsubmit="return validateForm2()">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name2" name="name">
+                <span class="error" id="nameError2"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Hobbies:</label><br>
+                <input type="checkbox" id="hobbyReading2" name="hobbies2[]" value="Reading">
+                <label for="hobbyReading2">Reading</label><br>
+                <input type="checkbox" id="hobbyTraveling2" name="hobbies2[]" value="Traveling">
+                <label for="hobbyTraveling2">Traveling</label><br>
+                <input type="checkbox" id="hobbyGaming2" name="hobbies2[]" value="Gaming">
+                <label for="hobbyGaming2">Gaming</label><br>
+                <span class="error" id="hobbiesError2"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label><br>
+                <input type="radio" id="male2" name="gender2" value="male">
+                <label for="male2">Male</label><br>
+                <input type="radio" id="female2" name="gender2" value="female">
+                <label for="female2">Female</label><br>
+                <input type="radio" id="other2" name="gender2" value="other">
+                <label for="other2">Other</label><br>
+                <span class="error" id="genderError2"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="country2">Country:</label>
+                <select id="country2" name="country2">
+                    <option value="">Select your country</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Australia">Australia</option>
+                </select>
+                <span class="error" id="countryError2"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message:</label><br>
+                <textarea id="message2" name="message"></textarea>
+                <span class="error" id="messageError2"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+        <div id="successMessage2" class="success-message">
+            Form submitted successfully!
+        </div>
+    </div>
+
+    <script src="js/validate2.js"></script>
+</body>
+</html>
